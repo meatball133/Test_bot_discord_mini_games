@@ -17,7 +17,7 @@ async def on_message(message, count = ["","","","","","","","",""]):#the mini ga
         if message.author == client.user:
             return
         if message.content.startswith('-start'):
-            await message.channel.send('(Vill påpeka att detta inte är min kod)Your journey has just started, young padawan. Which planet would you like to travel to. Write a for Tatooine, b for Coruscant, c for Hoth')
+            await message.channel.send('(Vill påpeka att detta inte är Carls kod)Your journey has just started, young padawan. Which planet would you like to travel to. Write a for Tatooine, b for Coruscant, c for Hoth')
             count.insert(0, 1)
         if message.content.startswith('-a') and 1 == count[0] and "a" != count[1]:
             await message.channel.send("On your way to Tatooine you meet a star destroyer, you were lucky to escape but your ship has now a damadged hyperdrive. What do you want to do? Write a to send a distress signal, b to try to find some junk in space and repair the ship, c to to land on a ice planet nearby")
